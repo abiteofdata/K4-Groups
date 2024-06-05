@@ -1,5 +1,5 @@
 # K4-Groups
-A collection of GAP code relating to construction and analysis of K4-solvable groups.
+A collection of GAP code relating to construction and analysis of K4-solvable groups. Read about GAP [here.](https://www.gap-system.org/)
 
 ## Order of Elements
 As prime graphs are determined by the presence of orders of elements in a group, it is important to be able to retrieve the list of orders of elements of any given group.
