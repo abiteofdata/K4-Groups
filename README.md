@@ -1,7 +1,7 @@
 # K4-Groups
 A collection of GAP code relating to construction and analysis of K4-solvable groups. Read about GAP [here.](https://www.gap-system.org/)
 
-In the following examples, we will use G as the alternating group on 7 elements. 
+In the following examples, we will use $G = A_7$. 
 
 ```
 G := AlternatingGroup(7);
@@ -17,7 +17,7 @@ Set(cc, x-> Order(Representative(x)));
 ```
 
 
-## Orders of subgroups
+## Orders of Subgroups
 It is also important to find the exact orders of subgroups present in a group, as seen in many of the proofs of Section 3. See the following.
 
 ```
@@ -34,5 +34,16 @@ IdGroup(Representative(fcc[1]))
 ```
 
 The group ID can be searched online to find the exact description of the group. StructureDescription can also be used, but it can be inaccurate.
+
+## Perfect Groups Library
+GAP has a list of all perfect groups with orders smaller than $2 \cdot 10^6$. To access this library, we can use
+```
+DisplayInformationPerfectGroups(n);
+```
+for a positive integer $n \leq 2 \cdot 10^6$, and the library will display all perfect groups with that order. Alternatively, for a given group $H$, we can use
+```
+SizeNumbersPerfectGroups(H);
+```
+to find all perfect groups that have $H$ has a composition factor. This is quite useful, but the syntax for H is quite specific (see [GAP Manual 50.6](https://docs.gap-system.org/doc/ref/chap50_mj.html#X7A884ECF813C2026)).
 
 
