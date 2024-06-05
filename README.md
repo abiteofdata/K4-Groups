@@ -10,4 +10,4 @@ See [here.](element_orders.g)
 It is also important to find the exact orders of subgroups present in a group, as seen in many of the proofs of Section 3.
 This is done [here.](subgroup_orders_1.g)
 Sometimes, this is not enough, and the identification of the subgroup of that order is needed. For example, this is seen in the Relevant Subgroups section of Table 1 in Appendix B. 
-This is done [here.](subgroup_orders_2.g).
+This is done [here.](subgroup_orders_2.g)
