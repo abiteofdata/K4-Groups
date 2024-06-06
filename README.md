@@ -12,7 +12,7 @@ Set(ConjugacyClasses(G), x-> Order(Representative(x)));
 ```
 
 ## Orders of Subgroups
-It is also important to find the exact orders of subgroups present in a group, as seen in many of the proofs of Section 3. See the following.
+It is also important to find the exact orders of subgroups present in a group, as seen in many of the proofs of Section 3. To do this, we use
 
 ```
 Set(ConjugacyClassesSubgroups(G), x->Size(Representative(x)));
