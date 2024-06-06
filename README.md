@@ -56,14 +56,25 @@ In Section **3.5**, the group $3^5.M_{11}$ is given by
 ```
 G := PerfectGroup(1924560,1)
 ```
-In Section **3.6**, the proof of $\text{PSL}(3,4)$ states the existence of distinct groups $E_1$ and $E_2$ isomorphic to $\text{PSL}(3,4) \rtimes C_2$ that produce important prime graphs. The construction of these groups are given as follows.
+In Section **3.6**, the classification of $\text{PSL}(3,4)$ states the existence of distinct groups $E_1$ and $E_2$ that produce important prime graphs. The construction of these groups are given as follows.
 ```
 G := PSL(3,4);; H := AutomorphismGroup(G);;
 H := Image(IsomorphismPermGroup(H),H);; cc := ConjugacyClassesSubgroups(H);;
 fcc := Filtered(cc, x->Size(Representative(x)) = 40320);;
 E1 := Representative(fcc[1]);; E2 := Representative(fcc[2]);;
 ```
-The prime graph complements of $E_1$ and $E_2$ are what we need. Alternatively, permutation representations of the above groups are given here.
+The prime graph complements of $E_1$ and $E_2$ are what we need. 
+
+Also in this section, the classification of $U_4(3)$ states the existence of a group $E$. Its construction is as follows.
+```
+G := PSU(4,3);; H := AutomorphismGroup(G);;
+H := Image(IsomorphismPermGroup(H),H);; cc := ConjugacyClassesSubgroups(H);; #computation might take a while
+fcc := Filtered(cc, x->Size(Representative(x)) = 6531840);;
+E3 := Representative(fcc[2]);;
+```
+This E3 is our $E$. 
+
+Alternatively, permutation representations of the above groups are given: for [$E_1$], [$E_2$], and [$E$].
 
 ## Miscellaneous Tips
 As the size of groups increase, so does the need for more efficient algorithms and computational methods. Here are some simple, but important examples. 
