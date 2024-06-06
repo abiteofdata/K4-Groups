@@ -56,7 +56,7 @@ In Section **3.5**, the group $3^5.M_{11}$ is given by
 ```
 G := PerfectGroup(1924560,1)
 ```
-In Section **3.6**, the proof of $\operatorname{PSL}(3,4)$ states the existence of distinct groups $E_1$ and $E_2$ isomorphic to $\operatorname{PSL}(3,4) \rtimes C_2$ that produce important prime graphs. The construction of these groups are given as follows.
+In Section **3.6**, the proof of $\text{PSL}(3,4)$ states the existence of distinct groups $E_1$ and $E_2$ isomorphic to $\text{PSL}(3,4) \rtimes C_2$ that produce important prime graphs. The construction of these groups are given as follows.
 ```
 G := PSL(3,4);; H := AutomorphismGroup(G);;
 H := Image(IsomorphismPermGroup(H),H);; cc := ConjugacyClassesSubgroups(H);;
