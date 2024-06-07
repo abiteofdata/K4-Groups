@@ -48,7 +48,7 @@ for j in [1..Length(chars)] do
 Print(List(Filtered(cc, x->Order(Representative(x)) = q), x -> 1/Order(Representative(x)) * Sum([1..Order(Representative(x))], k -> (Representative(x)^k)^chars[j])));
 od;
 ```
-If at least one of the outputted lists is entirely made up of zeros, then elements of that order can act Frobeniusly.
+If none of the outputted lists consist entirely of 0s, then elements of that order always have fixed points.
 
 ## Group Constructions
 In Sections **3.5** and **3.6**, some important groups are used in the construction of certain prime graphs. The existence of these groups is justified here.
