@@ -49,6 +49,12 @@ Print(List(Filtered(cc, x->Order(Representative(x)) = q), x -> 1/Order(Represent
 od;
 ```
 If none of the outputted lists consist entirely of 0s, then elements of that order always have fixed points.
+Our data in Table 3 is computed as follows.
+
+```
+G := Image(IsomorphismPermGroup(G),G);; chars := Irr(G);; cc := ConjugacyClasses(G);; Print(Set(chars, x -> Filtered(PrimeDivisors(Size(G)), q -> not List(Filtered(cc, c->Order(Representative(c)) = q), c -> 1/q * Sum([1..q], k -> (Representative(c)^k)^x)) = List(Filtered(cc, c->Order(Representative(c)) = q), c->0))));
+```
+For a group $G$, a list in the output corresponds to a representation. A prime number $p$ appears in the list if and only if some element of order p has fixed points in that representation. Redundant lists are removed.
 
 ## Group Constructions
 In Sections **3.5** and **3.6**, some important groups are used in the construction of certain prime graphs. The existence of these groups is justified here.
@@ -92,6 +98,11 @@ as conjugacy classes of subgroups have the same order, and GAP has a special met
     G := Image(IsomorphismPermGroup(G),G);
 ```
 before doing other computations with this group.
+
+Some groups not in the library can be constructed with the command AtlasGroup, which can be useful.
+```
+    G := AtlasGroup("3.L3(7)");
+```
 
 
 
