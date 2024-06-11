@@ -80,7 +80,7 @@ E3 := Representative(fcc[2]);;
 ```
 This E3 is our $E$. 
 
-Alternatively, permutation representations of the above groups are also given: [E1](E1.txt), [E2](E2.txt), and [E](E.txt).
+However, GAP may not always produce outputs in the same order. For this reason, we also provide permutation representations of the above groups: [E1](E1.txt), [E2](E2.txt), and [E](E.txt).
 
 ## Miscellaneous Tips
 As the size of groups increase, so does the need for more efficient algorithms and computational methods. Here are some simple, but important examples. 
