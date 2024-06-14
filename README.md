@@ -24,7 +24,7 @@ For a given order $n$, we can do
 cc := ConjugacyClassesSubgroups(G);;
 fcc := Filtered(cc, x->Size(Representative(x)) = n);;
 IdGroup(Representative(fcc[1]))
-#Can iterate the number inside [] if there are multiple groups of the same order. GAP is indexed from 1.
+#Can iterate the number inside [] if there are multiple groups of the same order
 ```
 
 The group ID can be searched online to find the exact description of the group, if it is small enough. StructureDescription can also be used, but note that it can give the same result for non-isomorphic groups.
@@ -49,7 +49,8 @@ Print(List(Filtered(cc, x->Order(Representative(x)) = q), x -> 1/Order(Represent
 od;
 ```
 If none of the outputted lists consist entirely of 0s, then elements of that order always have fixed points.
-Our data in Table 3 is computed using the following code, which is a modification of the above. It computes elements of all prime orders that divide $|G|$, instead of having to specify one prime at a time. Furthermore, it compares the output lists automatically.
+
+Our data in Table 3 is computed using the following code, which is a modification of the above. Instead of having to specify one prime at a time, this algorithm gives information for all primes in $\pi(G)$. Furthermore, it compares the output lists automatically.
 
 ```
 G := Image(IsomorphismPermGroup(G),G);; chars := Irr(G);; cc := ConjugacyClasses(G);; Print(Set(chars, x -> Filtered(PrimeDivisors(Size(G)), q -> not List(Filtered(cc, c->Order(Representative(c)) = q), c -> 1/q * Sum([1..q], k -> (Representative(c)^k)^x)) = List(Filtered(cc, c->Order(Representative(c)) = q), c->0))));
