@@ -27,7 +27,7 @@ IdGroup(Representative(fcc[1]))
 #Can iterate the number inside [] if there are multiple groups of the same order. GAP is indexed from 1.
 ```
 
-The group ID can be searched online to find the exact description of the group. StructureDescription can also be used, but it can be inaccurate.
+The group ID can be searched online to find the exact description of the group, if it is small enough. StructureDescription can also be used, but note that it can give the same result for non-isomorphic groups.
 
 ## Perfect Groups Library
 GAP has a list of all perfect groups with orders smaller than $2 \cdot 10^6$. To access this library, we can use
