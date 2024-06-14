@@ -82,8 +82,11 @@ This E3 is our $E$.
 
 However, GAP may not always produce outputs in the same order. For this reason, we also provide permutation representations of the above groups: [E1](E1.txt), [E2](E2.txt), and [E](E.txt).
 
+For $U_4(3)$, another issue was constructing the perfect central extensions in GAP was also an issue. Thanks to Dr. Alex Hulpke for helping construct its the Schur Cover, linked here: [SchurCover](coveru43.g).
+
+
 ## Miscellaneous Tips
-As the size of groups increase, so does the need for more efficient algorithms and computational methods. Here are some simple, but important examples. 
+As the size of groups increase, so does the need for more efficient algorithms and computational methods. Hereare some simple, but important examples. 
 
 Suppose we want to find the order of maximal subgroups of a group $G$. Instead of computing
 ```
