@@ -82,7 +82,7 @@ This E3 is our $E$.
 
 However, GAP may not always produce outputs in the same order. For this reason, we also provide permutation representations of the above groups: [E1](E1.g), [E2](E2.g), and [E](E.g).
 
-For $U_4(3)$, another issue was constructing the perfect central extensions in GAP was also an issue. Thanks to Dr. Alex Hulpke for helping construct its the Schur Cover, linked here: [SchurCover](coveru43.g).
+For $U_4(3)$, another issue was constructing the perfect central extensions in GAP was also an issue. Thanks to Dr. Alex Hulpke for constructing its the Schur Cover, whose permutation representation is linked here: [SchurCover](coveru43.g).
 
 
 ## Miscellaneous Tips
