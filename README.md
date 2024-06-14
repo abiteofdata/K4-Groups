@@ -101,9 +101,9 @@ as conjugacy classes of subgroups have the same order, and GAP has a special met
 ```
     G := Image(IsomorphismPermGroup(G),G);
 ```
-before doing other computations with this group.
+before doing other computations with this group. There are more optimizations like these in the [GAP Manual](https://www.gap-system.org/Doc/manuals.html) and [FAQ](https://www.gap-system.org/Faq/faq.html), which are important to keep in mind.
 
-Some groups not in the library can be constructed with the command AtlasGroup, which can be useful.
+Some perfect groups not in the library can be constructed with the command AtlasGroup, which can also be useful.
 ```
     G := AtlasGroup("3.L3(7)");
 ```
